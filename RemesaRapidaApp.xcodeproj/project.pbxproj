@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0991FEC6DD199CB90AD15D7D /* PaymentSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E2C924A9E6191A7A8047B /* PaymentSubmissionViewModel.swift */; };
+		16F1D70A45B0AC1668409021 /* IdempotencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255700EA8F6E9E91E7C334 /* IdempotencyManagerTests.swift */; };
+		25A652617ED02513FCB5EFE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78929E32F43F74DF05EADC53 /* AppContainer.swift */; };
+		32646B969413CDD2DD078E25 /* PaymentDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D090616FEAFC8A60E2A5494 /* PaymentDashboardView.swift */; };
+		5B5179A8FBCF6B4F9D36DD56 /* YunoChallengeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F61204164D5DE38959A669EE /* YunoChallengeSDK */; };
+		7A3088FA8E5F0F178575118D /* RemesaRapidaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766B6D5A5F5654185863B72 /* RemesaRapidaApp.swift */; };
+		8F2CE31330612B18B6A0B0E0 /* YunoChallengeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A8BFAAB8BA9C971966809140 /* YunoChallengeSDK */; };
+		9B9CD573E0A9A68F2F0C9AA8 /* PaymentSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0C3C5444A1841CCA7727D /* PaymentSubmissionView.swift */; };
+		9D053110D2858A481BBD8D3B /* PaymentDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA49D7C879920F76EC058AD /* PaymentDashboardViewModel.swift */; };
+		A5A4B713027B77B2807ACE19 /* PaymentSyncServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6220BAD95F37E4C45BFA0 /* PaymentSyncServiceTests.swift */; };
+		C4BE4BCD566DFC2B26872044 /* NetworkSimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4573B4111036DBF779BB5B0 /* NetworkSimulatorViewModel.swift */; };
+		CB5B7380D23CF6D28F354C8E /* NetworkSimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F521C0F677FECABD0A4E725 /* NetworkSimulatorView.swift */; };
+		D3C21ABA55FA3B812E6E143E /* PaymentDashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720DE96523A8FB432728A93 /* PaymentDashboardViewModelTests.swift */; };
+		DA03A40D9BBFFDCC84ECFE50 /* LocalPaymentQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE944C438A2D5D9361E489 /* LocalPaymentQueueTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB9CEBB36865B36ADF4F1675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC481750341CD04EEAF5C53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C1AEDE90B1C7F678026CC9;
+			remoteInfo = RemesaRapidaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D090616FEAFC8A60E2A5494 /* PaymentDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDashboardView.swift; sourceTree = "<group>"; };
+		1720DE96523A8FB432728A93 /* PaymentDashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDashboardViewModelTests.swift; sourceTree = "<group>"; };
+		1766B6D5A5F5654185863B72 /* RemesaRapidaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemesaRapidaApp.swift; sourceTree = "<group>"; };
+		27D4E496037596CAF67C246B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30D6220BAD95F37E4C45BFA0 /* PaymentSyncServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSyncServiceTests.swift; sourceTree = "<group>"; };
+		3A3E2C924A9E6191A7A8047B /* PaymentSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSubmissionViewModel.swift; sourceTree = "<group>"; };
+		5CA49D7C879920F76EC058AD /* PaymentDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDashboardViewModel.swift; sourceTree = "<group>"; };
+		5F521C0F677FECABD0A4E725 /* NetworkSimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSimulatorView.swift; sourceTree = "<group>"; };
+		78929E32F43F74DF05EADC53 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		7B09153CB9DDEF0E4FD38221 /* RemesaRapidaApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RemesaRapidaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2F859A6E22C8AE7EF54EB6 /* RemesaRapidaAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RemesaRapidaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FE944C438A2D5D9361E489 /* LocalPaymentQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPaymentQueueTests.swift; sourceTree = "<group>"; };
+		AD3CB8503CA8BBDCAED3FD43 /* YunoChallengeSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = YunoChallengeSDK; path = YunoChallengeSDK; sourceTree = SOURCE_ROOT; };
+		B4E0C3C5444A1841CCA7727D /* PaymentSubmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSubmissionView.swift; sourceTree = "<group>"; };
+		C4573B4111036DBF779BB5B0 /* NetworkSimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSimulatorViewModel.swift; sourceTree = "<group>"; };
+		EF255700EA8F6E9E91E7C334 /* IdempotencyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdempotencyManagerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1A9FDBBFA474134F6731978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2CE31330612B18B6A0B0E0 /* YunoChallengeSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1072972D64F6A1CF36ED63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5179A8FBCF6B4F9D36DD56 /* YunoChallengeSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C199A1FD35FD2AA6506407 /* Submission */ = {
+			isa = PBXGroup;
+			children = (
+				B4E0C3C5444A1841CCA7727D /* PaymentSubmissionView.swift */,
+				3A3E2C924A9E6191A7A8047B /* PaymentSubmissionViewModel.swift */,
+			);
+			path = Submission;
+			sourceTree = "<group>";
+		};
+		2A0536CB312BD9EABF0E0D8F /* NetworkSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				5F521C0F677FECABD0A4E725 /* NetworkSimulatorView.swift */,
+				C4573B4111036DBF779BB5B0 /* NetworkSimulatorViewModel.swift */,
+			);
+			path = NetworkSimulator;
+			sourceTree = "<group>";
+		};
+		492D69B914DD9C075B5CFE1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B09153CB9DDEF0E4FD38221 /* RemesaRapidaApp.app */,
+				7E2F859A6E22C8AE7EF54EB6 /* RemesaRapidaAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D5360E723B4216C76997F78 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				27D4E496037596CAF67C246B /* Info.plist */,
+				ED8D7186CAAD7DB474F55E8A /* App */,
+				846869861CAD56DEFE1F37A2 /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		846869861CAD56DEFE1F37A2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ADF314078BDE407F410B9A80 /* Dashboard */,
+				2A0536CB312BD9EABF0E0D8F /* NetworkSimulator */,
+				20C199A1FD35FD2AA6506407 /* Submission */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ADF314078BDE407F410B9A80 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D090616FEAFC8A60E2A5494 /* PaymentDashboardView.swift */,
+				5CA49D7C879920F76EC058AD /* PaymentDashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BCC218F81404BCFA5E63F416 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AD3CB8503CA8BBDCAED3FD43 /* YunoChallengeSDK */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		DB4A6B5FC0CB9BE98ABB0137 = {
+			isa = PBXGroup;
+			children = (
+				BCC218F81404BCFA5E63F416 /* Packages */,
+				4D5360E723B4216C76997F78 /* Sources */,
+				DBBA9B322B0A30A1A0760B37 /* Tests */,
+				492D69B914DD9C075B5CFE1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBBA9B322B0A30A1A0760B37 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF255700EA8F6E9E91E7C334 /* IdempotencyManagerTests.swift */,
+				95FE944C438A2D5D9361E489 /* LocalPaymentQueueTests.swift */,
+				1720DE96523A8FB432728A93 /* PaymentDashboardViewModelTests.swift */,
+				30D6220BAD95F37E4C45BFA0 /* PaymentSyncServiceTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		ED8D7186CAAD7DB474F55E8A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78929E32F43F74DF05EADC53 /* AppContainer.swift */,
+				1766B6D5A5F5654185863B72 /* RemesaRapidaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C1AEDE90B1C7F678026CC9 /* RemesaRapidaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C1FEFD94281221AC6BE97 /* Build configuration list for PBXNativeTarget "RemesaRapidaApp" */;
+			buildPhases = (
+				AAF1B360862B18CDF60A01DC /* Sources */,
+				A1A9FDBBFA474134F6731978 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemesaRapidaApp;
+			packageProductDependencies = (
+				A8BFAAB8BA9C971966809140 /* YunoChallengeSDK */,
+			);
+			productName = RemesaRapidaApp;
+			productReference = 7B09153CB9DDEF0E4FD38221 /* RemesaRapidaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		432DF1231D54D47CA0EB38C2 /* RemesaRapidaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897D1A9C3FF5CE7B480054EC /* Build configuration list for PBXNativeTarget "RemesaRapidaAppTests" */;
+			buildPhases = (
+				AC4EDB9542B7A455E2AD0286 /* Sources */,
+				BB1072972D64F6A1CF36ED63 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E765F9C25434C706A04511B6 /* PBXTargetDependency */,
+			);
+			name = RemesaRapidaAppTests;
+			packageProductDependencies = (
+				F61204164D5DE38959A669EE /* YunoChallengeSDK */,
+			);
+			productName = RemesaRapidaAppTests;
+			productReference = 7E2F859A6E22C8AE7EF54EB6 /* RemesaRapidaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EC481750341CD04EEAF5C53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 84872065C49438D51EA9D5AB /* Build configuration list for PBXProject "RemesaRapidaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DB4A6B5FC0CB9BE98ABB0137;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				640E301CBC7B5059E52B005E /* XCLocalSwiftPackageReference "YunoChallengeSDK" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C1AEDE90B1C7F678026CC9 /* RemesaRapidaApp */,
+				432DF1231D54D47CA0EB38C2 /* RemesaRapidaAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF1B360862B18CDF60A01DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A652617ED02513FCB5EFE2 /* AppContainer.swift in Sources */,
+				CB5B7380D23CF6D28F354C8E /* NetworkSimulatorView.swift in Sources */,
+				C4BE4BCD566DFC2B26872044 /* NetworkSimulatorViewModel.swift in Sources */,
+				32646B969413CDD2DD078E25 /* PaymentDashboardView.swift in Sources */,
+				9D053110D2858A481BBD8D3B /* PaymentDashboardViewModel.swift in Sources */,
+				9B9CD573E0A9A68F2F0C9AA8 /* PaymentSubmissionView.swift in Sources */,
+				0991FEC6DD199CB90AD15D7D /* PaymentSubmissionViewModel.swift in Sources */,
+				7A3088FA8E5F0F178575118D /* RemesaRapidaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4EDB9542B7A455E2AD0286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F1D70A45B0AC1668409021 /* IdempotencyManagerTests.swift in Sources */,
+				DA03A40D9BBFFDCC84ECFE50 /* LocalPaymentQueueTests.swift in Sources */,
+				D3C21ABA55FA3B812E6E143E /* PaymentDashboardViewModelTests.swift in Sources */,
+				A5A4B713027B77B2807ACE19 /* PaymentSyncServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E765F9C25434C706A04511B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C1AEDE90B1C7F678026CC9 /* RemesaRapidaApp */;
+			targetProxy = DB9CEBB36865B36ADF4F1675 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		206A88D405DAAE392AE570E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remesarapida.RemesaRapidaAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemesaRapidaApp.app/RemesaRapidaApp";
+			};
+			name = Debug;
+		};
+		4E6D8F046590370348DD672C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remesarapida.RemesaRapidaApp;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7907886A98C4DB3C848E320F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A3254BD2E040D65FC4446DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remesarapida.RemesaRapidaApp;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98C58E69E55D7ED88FDF3C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remesarapida.RemesaRapidaAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemesaRapidaApp.app/RemesaRapidaApp";
+			};
+			name = Release;
+		};
+		B4DD100564DCD7EE31739DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84872065C49438D51EA9D5AB /* Build configuration list for PBXProject "RemesaRapidaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4DD100564DCD7EE31739DD4 /* Debug */,
+				7907886A98C4DB3C848E320F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		897D1A9C3FF5CE7B480054EC /* Build configuration list for PBXNativeTarget "RemesaRapidaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206A88D405DAAE392AE570E2 /* Debug */,
+				98C58E69E55D7ED88FDF3C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE5C1FEFD94281221AC6BE97 /* Build configuration list for PBXNativeTarget "RemesaRapidaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6D8F046590370348DD672C /* Debug */,
+				8A3254BD2E040D65FC4446DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		640E301CBC7B5059E52B005E /* XCLocalSwiftPackageReference "YunoChallengeSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = YunoChallengeSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8BFAAB8BA9C971966809140 /* YunoChallengeSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YunoChallengeSDK;
+		};
+		F61204164D5DE38959A669EE /* YunoChallengeSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YunoChallengeSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6EC481750341CD04EEAF5C53 /* Project object */;
+}

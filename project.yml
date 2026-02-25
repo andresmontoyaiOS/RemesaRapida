@@ -1,0 +1,30 @@
+name: RemesaRapidaApp
+options:
+  bundleIdPrefix: com.remesarapida
+packages:
+  YunoChallengeSDK:
+    path: YunoChallengeSDK
+targets:
+  RemesaRapidaApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [Sources]
+    resources:
+      - Resources
+    dependencies:
+      - package: YunoChallengeSDK
+    settings:
+      SWIFT_VERSION: "6.0"
+      SWIFT_STRICT_CONCURRENCY: complete
+      INFOPLIST_FILE: Sources/Info.plist
+  RemesaRapidaAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: RemesaRapidaApp
+      - package: YunoChallengeSDK
+    settings:
+      SWIFT_VERSION: "6.0"
+      SWIFT_STRICT_CONCURRENCY: complete
