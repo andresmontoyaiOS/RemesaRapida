@@ -1,0 +1,13 @@
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+build/
+DerivedData/
+.build/
+*.o
+*.d
+.swiftpm/
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.orig
