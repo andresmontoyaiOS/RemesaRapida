@@ -244,6 +244,34 @@ Tests use isolated `UserDefaults` suites (`UserDefaults(suiteName: UUID().uuidSt
 
 ---
 
+## What I Would Improve With More Time
+
+### 1. Real API integration
+Replace `MockPaymentAPI` with an actual Yuno payment orchestration API. This would include authentication (OAuth2 / API keys), proper HTTP error mapping to `URLError` codes, and response parsing. The protocol-based design means this is a pure swap — no other layer changes.
+
+### 2. SwiftData / CoreData persistence
+`UserDefaults` works but has no query capabilities. Migrating `LocalPaymentQueue` to **SwiftData** would enable filtering, sorting, and pagination of payment history without loading the full array into memory on every access — important as payment history grows.
+
+### 3. Background processing with `BGTaskScheduler`
+Currently the queue is only drained when the app is in the foreground and connectivity is restored. Registering a `BGAppRefreshTask` would allow iOS to wake the app periodically in the background to drain pending payments, improving reliability for users who submit payments and then lock their phone.
+
+### 4. Push notification receipt confirmation
+After a payment transitions to `.approved`, send the user a local (or remote) notification with the payment confirmation details. This closes the feedback loop when the app is backgrounded during processing.
+
+### 5. Biometric authentication before submission
+Wrap `PaymentSubmissionView`'s submit action with a `LAContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics)` call. Financial operations should require explicit user authentication per platform guidelines.
+
+### 6. Full retry queue visibility
+Expose `retryCount`, next retry timestamp, and failure reason in the dashboard UI, not just the final status badge. Users should be able to see "retrying in 4s" rather than a static "failed" state.
+
+### 7. Conflict resolution for multi-device scenarios
+If a user has two devices and submits the same bill reference on both, the hash-based idempotency key won't help — the keys are different UUIDs. A real implementation would hash the business key (billReference + billType + amount) as the idempotency key so the server can deduplicate across devices.
+
+### 8. Accessibility and localization
+All strings are currently hardcoded in English/Spanish. A production app would use `LocalizedStringKey` throughout and support Dynamic Type, VoiceOver labels, and right-to-left layouts for the migrant worker markets the app targets.
+
+---
+
 ## Dependencies
 
 The project has **no third-party dependencies**. All functionality is implemented using Apple SDK frameworks:
