@@ -1,5 +1,7 @@
 # RemesaRapida - Resilient Bill Payment Demo
 
+![App Demo](Resources/demo.gif)
+
 RemesaRapida is an iOS demo application that showcases an **offline-first, resilient bill payment pipeline** built on top of the embedded `YunoChallengeSDK` Swift Package. Users can submit utility bill payments at any time — even without a network connection. The SDK queues payments locally, monitors connectivity, and automatically processes the queue the moment the device comes back online, applying exponential-backoff retry logic and idempotency enforcement to prevent duplicate submissions.
 
 ---
